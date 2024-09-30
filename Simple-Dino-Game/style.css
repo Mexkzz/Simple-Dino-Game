@@ -1,0 +1,68 @@
+.game {
+    width: 600px;
+    height: 200px;
+    border-bottom: 1px solid black;
+    margin: auto;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: bold;
+}
+#game-over-message {
+    text-align: center;
+    font-size: 50px;
+    font-weight: bold;
+    position: relative;
+    top: 100px
+}
+#score {
+    text-align: center;
+    font-size: 30px;
+    margin-top: 100px;
+    position: absolute;
+}
+#dino {
+    width: 50px;
+    height: 50px;
+    background-image: url(img/dinosaur-game-logo-2723F385F0-seeklogo.com.png);
+    background-size: 50px 50px;
+    position: relative;
+    top: 150px;
+}
+#cactus {
+    width: 20px;
+    height: 50px;
+    background-image: url(img/1_Cactus_Chrome_Dino.png);
+    background-size: 20px 50px;
+    position: relative;
+    top: 110px;
+    left: 580px;
+    animation: cactusMov 2s infinite linear;
+}
+@keyframes cactusMov {
+    0% {
+        left: 580px;
+    }
+    100% {
+        left: -20px;
+    }
+}
+
+.jump {
+    animation: jump 0.5s linear;
+}
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+    30% {
+        top: 130px;
+    }
+    50% {
+        top: 80px;
+    }
+    80% {
+        top: 130px;
+    }
+    100% {
+        top: 150px;
+    }
+}
